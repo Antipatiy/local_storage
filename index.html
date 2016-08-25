@@ -4,17 +4,15 @@
     <link href="css/main.css" rel="stylesheet">
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/onload-app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <!--[if lt IE 9]>
-    <script src="html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!--Hide popups-->
+<div id="popup_name-0" class="popup_block">
+    <img src="img/0.jpg">
+</div>
 <div id="popup_name-1" class="popup_block">
     <img src="img/1.jpg">
 </div>
@@ -36,11 +34,12 @@
 <div id="popup_name-7" class="popup_block">
     <img src="img/7.jpg">
 </div>
-<div id="popup_name-8" class="popup_block">
-    <img src="img/8.jpg">
-</div>
 <!--End hide popups-->
 <!--Pictures features-->
+<div class="pic jpg-pic-0">
+    <a href="#?w=300" rel="popup_name-0" class="poplight">
+    </a>
+</div>
 <div class="pic jpg-pic-1">
     <a href="#?w=300" rel="popup_name-1" class="poplight">
     </a>
@@ -69,22 +68,19 @@
     <a href="#?w=300" rel="popup_name-7" class="poplight">
     </a>
 </div>
-<div class="pic jpg-pic-8">
-    <a href="#?w=300" rel="popup_name-8" class="poplight">
-    </a>
-</div>
-<a class="close close-1">x</a>
-<a class="close close-2">x</a>
-<a class="close close-3">x</a>
-<a class="close close-4">x</a>
-<a class="close close-5">x</a>
-<a class="close close-6">x</a>
-<a class="close close-7">x</a>
-<a class="close close-8">x</a>
+<a class="close close_0">x</a>
+<a class="close close_1">x</a>
+<a class="close close_2">x</a>
+<a class="close close_3">x</a>
+<a class="close close_4">x</a>
+<a class="close close_5">x</a>
+<a class="close close_6">x</a>
+<a class="close close_7">x</a>
 
 <ul>
     <li>
-        Скрипт подсчитывает количество картинок на странице и выводит над всеми картинками их количество и актуальную дату.
+        Скрипт подсчитывает количество картинок на странице и выводит над всеми картинками их количество и актуальную
+        дату.
     </li>
     <li>
         Под каждым изображением в сетке размещена кнопка закрытия.
@@ -93,7 +89,8 @@
         При клике на неё соответствующее изображение удаляется из общего списка.
     </li>
     <li>
-        Когда пользователь удаляет картинки, сохраняются данные о том, что было удалено, и после перезагрузки страницы удалённые ранее картинки отстуствуют на странице.
+        Когда пользователь удаляет картинки, сохраняются данные о том, что было удалено, и после перезагрузки страницы
+        удалённые ранее картинки отстуствуют на странице.
     </li>
     <li>
         Внизу размещена кнопка "Восстановить", которая делает все ранее скрытые пользователем картинки видимыми.
@@ -101,7 +98,7 @@
 </ul>
 <!--End pictures features-->
 <!-- Button -->
-<input type="button" value="Восстановить" onclick="restoreItems()" />
-<script src="js/async-app.js"></script>
+<input class="restore" type="button" value="Восстановить" />
+<script src="js/main.js"></script>
 </body>
 </html>
